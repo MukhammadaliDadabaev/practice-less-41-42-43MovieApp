@@ -1,0 +1,116 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+     display: flex;
+     justify-content: center;
+     /* align-items: center; */
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+     background-color: rgb(14, 105, 105);
+}
+/* header, main styles */
+header {
+    height: 70vh;
+}
+.header__nav {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.brand__logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: #fff;
+}
+.header__nav ul {
+    display: flex;
+    list-style: none;
+    
+}
+.header__nav ul li a {
+   margin-left: 25px;
+   font-size: 1.3rem;
+   text-decoration: none; 
+   color: #fff;
+}
+.main__head {
+    height: 60vh;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    background: url("https://wallpapertag.com/wallpaper/full/6/0/d/605188-cool-movie-posters-wallpapers-1920x1080.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__head img {
+    width: 100px;
+    transition: 0.15s all linear;
+}
+.main__head img:hover {
+    width: 120px;
+}
+
+/* movies styles */
+.movies {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 300px;
+    height: 630px;
+    margin: 15px;
+    border-radius: 7px;
+    background-color: #fff;
+}
+.card__img {
+    overflow: hidden;
+}
+.card__img img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
+.card__img:hover img {
+    transform: scale(1.1);
+}
+.card__info {
+    padding: 0.7rem 0.7rem;
+}
+.card__info p {
+    margin: 12px 0;
+}
+/* footer styles */
+.main__foot {
+    height: 55vh;
+    clip-path: polygon(0 0, 100% 0, 100% 87%, 0% 100%);
+    background: url("http://all4desktop.com/data_images/original/4159257-rise-of-the-guardians-2012-movie.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__foot img {
+    width: 100px;
+    transition: 0.15s all linear;
+}
+.main__foot img:hover {
+    width: 120px;
+}
+.footer__info {
+    margin-bottom: 1.7rem;
+    text-align: center;
+    color: #fff;
+}
