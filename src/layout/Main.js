@@ -9,7 +9,7 @@ class Main extends Component {
 
   componentDidMount() {
     fetch(
-      "http://www.omdbapi.com/?i=tt3896198&apikey=46217bcb&s=boys"
+      "http://www.omdbapi.com/?i=tt3896198&apikey=46217bcb&s=Batman"
     )
       .then((respons) => respons.json())
       .then((data) => this.setState({ movies: data.Search }));
