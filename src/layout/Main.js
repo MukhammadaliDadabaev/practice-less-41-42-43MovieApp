@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 
 import Movies from "../components/Movies";
+import SearchMovies from "../components/SearchMovies";
 
 class Main extends Component {
   state = {
@@ -15,9 +16,12 @@ class Main extends Component {
       .then((data) => this.setState({ movies: data.Search }));
   }
   render() {
-    return <div className="container">
-        <Movies movies={this.state.movies}/>
-    </div>;
+    return (
+      <div className="container">
+        <SearchMovies />
+        <Movies movies={this.state.movies} />
+      </div>
+    );
   }
 }
 
