@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class SearchMovies extends Component {
   state = {
-    search: "",
+    search: "Mask",
   };
 
   handleMovie = (e) => {
